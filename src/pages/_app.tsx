@@ -1,5 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/core'
 
+import '../styles/main.css'
 import theme from '../theme'
 import { AppProps } from 'next/app'
 
