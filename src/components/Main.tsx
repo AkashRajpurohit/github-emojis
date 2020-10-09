@@ -17,7 +17,7 @@ export const Main = () => {
 
 	const emojiObjToArray = Object.keys(data).map((code: string) => {
 		return {
-			code,
+			code: `:${code}:`,
 			img: data[code] as string,
 		};
   });
