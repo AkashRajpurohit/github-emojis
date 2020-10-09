@@ -10,7 +10,7 @@ import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { Footer } from '../components/Footer'
 
 const Index = () => (
-  <Container height="100vh">
+  <Container>
     <Hero />
     <DarkModeSwitch />
     <Main />

@@ -1,5 +1,5 @@
 import { Box, Stack, Input, Flex, Spinner } from '@chakra-ui/core';
-import { Card } from './Card';
+import { EmojiCards } from './EmojiCards';
 
 import fetcher from '../lib/fetcher';
 import useSwr from 'swr';
@@ -13,7 +13,14 @@ export const Main = () => {
 				<Spinner />
 			</Stack>
 		);
-	}
+  }
+
+	const emojiObjToArray = Object.keys(data).map((code: string) => {
+		return {
+			code,
+			img: data[code] as string,
+		};
+  });
 
 	return (
 		<Stack pt='8' w='70%'>
@@ -26,10 +33,7 @@ export const Main = () => {
 				justifyContent='center'
 				alignItems='center'
 			>
-				{Object.keys(data).length > 0 &&
-					Object.keys(data).map((code) => (
-						<Card code={code} img={data[code]} key={code} />
-					))}
+				<EmojiCards emojis={emojiObjToArray} />
 			</Flex>
 		</Stack>
 	);
