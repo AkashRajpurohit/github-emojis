@@ -10,7 +10,7 @@ export const Card = ({ code, img }: { code: string; img: string }) => {
 			flexDirection='column'
 			mx='18px'
 		>
-			<img src={img}></img>
+			<img src={img} width="40px" height="40px"></img>
 			<Text>:{code}:</Text>
 			<Button mt='2' p='5px' variant='primary'>
 				Copy
