@@ -8,7 +8,7 @@ export const Card = ({ code, img }: { code: string; img: string }) => {
 			justifyContent='center'
 			alignItems='center'
 			flexDirection='column'
-			mx='12px'
+			mx='18px'
 		>
 			<img src={img}></img>
 			<Text>:{code}:</Text>
