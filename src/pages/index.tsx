@@ -20,14 +20,14 @@ const Index = () => (
     <meta name='og:title' content='Github Emojis | Akash Rajpurohit' />
     <meta name='og:type' content='website' />
     <meta name='og:url' content='https://github-emojis.vercel.app' />
-    <meta name='og:image' content='/banner.png' />
+    <meta name='og:image' content='https://github-emojis.vercel.app/banner.png' />
     <meta name='og:image:alt' content='Github Emojis | Akash Rajpurohit' />
     <meta name='og:site_name' content='Github Emojis | Akash Rajpurohit' />
     <meta name='og:locale' content='en_US' />
     <meta name='twitter:card' content='summary_large_image' />
     <meta name='twitter:title' content='Github Emojis | Akash Rajpurohit' />
     <meta name='twitter:description' content='Search shortcodes of emojis supported by Github' />
-    <meta name='twitter:image' content='/banner.png' />
+    <meta name='twitter:image' content='https://github-emojis.vercel.app/banner.png' />
     <meta name='twitter:image:alt' content='Github Emojis | Akash Rajpurohit' />
     <meta name='twitter:site' content='Github Emojis | Akash Rajpurohit' />
     <meta name='twitter:author' content='AkashWhoCodes' />
