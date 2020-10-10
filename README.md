@@ -1,27 +1,50 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui) and Typescript
+<h1 align="center">
+  <img src="public/banner.png" alt="GraphQL" width="800" height="450" />
+  <br>
+  Github Emojis
+</h1>
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app with typescript.
+<p align="center">
+  <a href="https://github.com/AkashRajpurohit/github-emojis"><img src="https://visitor-badge.laobi.icu/badge?page_id=akashrajpurohit-github-emojis.visitor-badge" height="20"></a>
+  <a href="https://github.com/AkashRajpurohit/github-emojis/stargazers"><img src="https://img.shields.io/github/stars/AkashRajpurohit/github-emojis" height="20"></a>
+  <a href="https://github.com/AkashRajpurohit/github-emojis/network/members"><img src="https://img.shields.io/github/forks/AkashRajpurohit/github-emojis" height="20"></a>
+  <a href="https://github.com/AkashRajpurohit/github-emojis/issues?q=is%3Aopen+is%3Aissue"><img src="https://img.shields.io/github/issues/AkashRajpurohit/github-emojis" height="20"></a>
+  <a href="https://github.com/AkashRajpurohit/github-emojis/LICENSE"><img src="https://img.shields.io/github/license/AkashRajpurohit/github-emojis" height="20"></a>
+  <a href="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FAkashRajpurohit%2Fgithub-emojis"><img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FAkashRajpurohit%2Fgithub-emojis" height="20"></a>
+</p>
 
-Next.js and chakra-ui have built-in TypeScript declarations, so we'll get autocompletion for their modules straight away.
+---
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Provider and theme so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+## Motivation 💪
+I often use emojis in my github commit messages, and only very few of them (because I usually forget the names), now there are many awesome gists which provide an entire list of all emojis supported by Github like [rxaviers](https://gist.github.com/rxaviers/7360908) and [roachhd](https://gist.github.com/roachhd/1f029bd4b50b8a524f3c) etc.
 
-## Deploy your own
+However as it loads the entire emoji list right of the bat, it takes up too much time to load the page and not really easy to search while loading, so I thought of creating a small project to solve this problem that I was facing.
 
-Deploy the example using [Vercel](https://vercel.com):
+## Tech Stack 💻
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-chakra-ui-typescript)
+* [Next.js](https://nextjs.org/)
+* [Chakra UI](https://chakra-ui.com/)
+* [Typescript](https://www.typescriptlang.org/)
+* [Vercel For Deployment](https://vercel.com)
 
-## How to use
+## Features ✨
 
-### Using `create-next-app`
+* Lazy Loading Emojis from [Github Emoji API](https://developer.github.com/v3/emojis/) using [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+* Search Feature with debounce
+* Dark / Light theme switcher
+* Minimalistic and smooth UI
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Support 💵
+> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
 
-```bash
-npx create-next-app --example with-chakra-ui-typescript with-chakra-ui-typescript-app
-# or
-yarn create next-app --example with-chakra-ui-typescript with-chakra-ui-typescript-app
-```
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/RajpurohitAkash)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Bugs or Requests 🐛
+
+If you encounter any problems feel free to open an [issue](https://github.com/AkashRajpurohit/github-emojis/issues/new?template=bug_report.md). If you feel the library is missing a feature, please raise a [ticket](https://github.com/AkashRajpurohit/github-emojis/issues/new?template=feature_request.md) on GitHub and I'll look into it. Pull request are also welcome.
+
+## Where to find me? 👦🏽
+* [Website](https://akashrajpurohit.cf/)
+* [Linkedin](https://www.linkedin.com/in/AkashRajpurohit)
+* [Instagram](https://www.instagram.com/akashwho.codes)
+* [Twitter](https://www.twitter.com/AkashWhoCodes)
