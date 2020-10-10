@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react';
 
-export const Intersection = ({ onVisible }: { onVisible: Function}) => {
+export const Intersection = ({ onVisible }: { onVisible: Function }) => {
   const target = useRef() as React.MutableRefObject<HTMLDivElement>;
   const onVisibleRef = useRef(onVisible);
 
@@ -10,9 +10,9 @@ export const Intersection = ({ onVisible }: { onVisible: Function}) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      const isIntersecting = entries.some(e => e.isIntersecting);
+      const isIntersecting = entries.some((e) => e.isIntersecting);
 
-      if(isIntersecting) {
+      if (isIntersecting) {
         onVisibleRef.current();
       }
     });
@@ -23,4 +23,4 @@ export const Intersection = ({ onVisible }: { onVisible: Function}) => {
   }, []);
 
   return <div ref={target} />;
-}
+};

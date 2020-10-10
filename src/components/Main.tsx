@@ -5,22 +5,22 @@ import fetcher from '../lib/fetcher';
 import useSwr from 'swr';
 
 export const Main = () => {
-	const { data } = useSwr('/api/get-emojis', fetcher);
+  const { data } = useSwr('/api/get-emojis', fetcher);
 
-	if (!data) {
-		return (
-			<Stack pt='8'>
-				<Spinner />
-			</Stack>
-		);
-	}
+  if (!data) {
+    return (
+      <Stack pt="8">
+        <Spinner />
+      </Stack>
+    );
+  }
 
-	const emojiObjToArray = Object.keys(data).map((code: string) => {
-		return {
-			code: `:${code}:`,
-			img: data[code] as string,
-		};
-	});
+  const emojiObjToArray = Object.keys(data).map((code: string) => {
+    return {
+      code: `:${code}:`,
+      img: data[code] as string,
+    };
+  });
 
-	return <EmojiCards emojis={emojiObjToArray} />;
+  return <EmojiCards emojis={emojiObjToArray} />;
 };

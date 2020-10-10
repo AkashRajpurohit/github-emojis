@@ -1,4 +1,4 @@
 export interface IEmoji {
-	code: string;
-	img: string;
+  code: string;
+  img: string;
 }
