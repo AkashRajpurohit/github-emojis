@@ -9,7 +9,7 @@
   <a href="https://github.com/AkashRajpurohit/github-emojis/stargazers"><img src="https://img.shields.io/github/stars/AkashRajpurohit/github-emojis" height="20"></a>
   <a href="https://github.com/AkashRajpurohit/github-emojis/network/members"><img src="https://img.shields.io/github/forks/AkashRajpurohit/github-emojis" height="20"></a>
   <a href="https://github.com/AkashRajpurohit/github-emojis/issues?q=is%3Aopen+is%3Aissue"><img src="https://img.shields.io/github/issues/AkashRajpurohit/github-emojis" height="20"></a>
-  <a href="https://github.com/AkashRajpurohit/github-emojis/LICENSE"><img src="https://img.shields.io/github/license/AkashRajpurohit/github-emojis" height="20"></a>
+  <a href="https://github.com/AkashRajpurohit/github-emojis/blob/master/LICENSE"><img src="https://img.shields.io/github/license/AkashRajpurohit/github-emojis" height="20"></a>
   <a href="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FAkashRajpurohit%2Fgithub-emojis"><img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FAkashRajpurohit%2Fgithub-emojis" height="20"></a>
 </p>
 
