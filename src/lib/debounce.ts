@@ -1,4 +1,4 @@
-export const debouce = (func: Function, duration: number) => {
+export const debounce = (func: Function, duration: number) => {
   let timeout: ReturnType<typeof setTimeout>;
 
   return function (...args: any[]) {

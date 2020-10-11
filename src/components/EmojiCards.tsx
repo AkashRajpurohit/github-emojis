@@ -3,7 +3,7 @@ import { IEmoji } from '../interfaces/IEmoji';
 import { Card } from './Card';
 import { Intersection } from './Intersection';
 import { Box, Input, Stack, Flex, Text } from '@chakra-ui/core';
-import { debouce } from '../lib/debounce';
+import { debounce } from '../lib/debounce';
 
 interface IEmojiCardProps {
   emojis: IEmoji[];
@@ -84,7 +84,7 @@ export const EmojiCards = ({ emojis }: IEmojiCardProps) => {
     dispatch({ type: 'LOAD_MORE' });
   }, []);
 
-  const filterOnSearch = debouce((value: string) => {
+  const filterOnSearch = debounce((value: string) => {
     dispatch({ type: 'SEARCH', payload: value });
   }, 400);
 
