@@ -21,5 +21,7 @@ const getData = async (): Promise<Record<string, string>> => {
 export default async (_: NextApiRequest, res: NextApiResponse) => {
   const data = await getData();
 
+  res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate');
+
   return res.status(200).json(data);
 };
