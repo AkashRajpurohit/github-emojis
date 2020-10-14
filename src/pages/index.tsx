@@ -6,8 +6,12 @@ import { Container } from '../components/Container';
 import { Main } from '../components/Main';
 import { DarkModeSwitch } from '../components/DarkModeSwitch';
 import { Footer } from '../components/Footer';
+import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
+import { IEmoji } from '../interfaces/IEmoji';
 
-const Index = () => (
+const Index = ({
+  emojis,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) => (
   <>
     <Head>
       <link rel="shortcut icon" href="/favicon.png" />
@@ -52,7 +56,7 @@ const Index = () => (
     <Container>
       <Hero />
       <DarkModeSwitch />
-      <Main />
+      <Main emojis={emojis} />
       <Footer>
         <Text>
           Made with ❤️ by{' '}
@@ -64,5 +68,28 @@ const Index = () => (
     </Container>
   </>
 );
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const url =
+    process.env.NODE_ENV === 'production'
+      ? 'https://github-emojis.vercel.app'
+      : 'http://localhost:3000';
+
+  const res = await fetch(`${url}/api/get-emojis`);
+  const data = await res.json();
+
+  const emojiObjToArray: IEmoji[] = Object.keys(data).map((code: string) => {
+    return {
+      code: `:${code}:`,
+      img: data[code] as string,
+    };
+  });
+
+  return {
+    props: {
+      emojis: emojiObjToArray,
+    },
+  };
+};
 
 export default Index;
