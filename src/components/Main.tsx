@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useCallback } from 'react';
+import React, { useReducer, useCallback } from 'react';
 import { IEmoji } from '../interfaces/IEmoji';
 import { Card } from './Card';
 import { Intersection } from './Intersection';
@@ -70,15 +70,11 @@ export const Main = ({ emojis }: IEmojiCardProps) => {
   const initialState = {
     totalEmojis: emojis,
     filteredEmojis: emojis,
-    emojis: [] as IEmoji[],
-    emojisLength: 0,
+    emojis: emojis.slice(0, 40),
+    emojisLength: 40,
   };
 
   const [state, dispatch] = useReducer(emojiReducer, initialState);
-
-  useEffect(() => {
-    dispatch({ type: 'LOAD_MORE' });
-  }, []);
 
   const loadMore = useCallback(() => {
     dispatch({ type: 'LOAD_MORE' });
