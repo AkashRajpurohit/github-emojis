@@ -14,7 +14,7 @@ const Index = ({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => (
   <>
     <Head>
-      <link rel="shortcut icon" href="/favicon.png" />
+      <link rel="shortcut icon" href="/favicon.ico" />
       <link rel="canonical" href="https://github-emojis.vercel.app" />
       <title>Github Emojis | Akash Rajpurohit</title>
       <meta
@@ -51,6 +51,35 @@ const Index = ({
       <meta
         name="keywords"
         content="github emojis, emojis in github, github commit emojis, github icons for commits"
+      />
+      <link rel="manifest" href="manifest.json" />
+      <link
+        href="/android-chrome-192x192.png"
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+      />
+      <link
+        href="/android-chrome-512x512.png"
+        rel="icon"
+        type="image/png"
+        sizes="512x512"
+      />
+      <link rel="apple-touch-icon" href="/apple-icon.png" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="application-name" content="Github Emojis" />
+      <meta name="apple-mobile-web-app-title" content="Github Emojis" />
+      <meta name="theme-color" content="#171923" />
+      <meta name="msapplication-navbutton-color" content="#171923" />
+      <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+      />
+      <meta name="msapplication-starturl" content="/" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
     </Head>
     <Container>

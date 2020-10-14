@@ -1,0 +1,22 @@
+{
+  "name": "Github Emojis | Akash Rajpurohit",
+  "short_name": "Github Emojis",
+  "theme_color": "#171923",
+  "background_color": "#171923",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
