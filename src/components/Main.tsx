@@ -2,7 +2,15 @@ import React, { useReducer, useCallback } from 'react';
 import { IEmoji } from '../interfaces/IEmoji';
 import { Card } from './Card';
 import { Intersection } from './Intersection';
-import { Box, Input, Stack, Flex, Text } from '@chakra-ui/core';
+import {
+  Box,
+  Input,
+  Stack,
+  Flex,
+  Text,
+  FormLabel,
+  FormControl,
+} from '@chakra-ui/core';
 import { debounce } from '../lib/debounce';
 
 interface IEmojiCardProps {
@@ -87,12 +95,15 @@ export const Main = ({ emojis }: IEmojiCardProps) => {
   return (
     <Stack pt="8" w="70%">
       <Box mb="4">
-        <Input
-          placeholder="Search Shortcodes"
-          onChange={(e) => {
-            filterOnSearch(e.target.value);
-          }}
-        />
+        <FormControl>
+          <FormLabel>Search Shortcodes</FormLabel>
+          <Input
+            placeholder="eg: atom"
+            onChange={(e) => {
+              filterOnSearch(e.target.value);
+            }}
+          />
+        </FormControl>
       </Box>
       <Flex
         flexWrap="wrap"

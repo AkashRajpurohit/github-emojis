@@ -60,7 +60,11 @@ const Index = ({
       <Footer>
         <Text>
           Made with ❤️ by{' '}
-          <Link href="https://akashrajpurohit.cf" target="_blank">
+          <Link
+            href="https://akashrajpurohit.cf"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+          >
             Akash Rajpurohit
           </Link>
         </Text>
