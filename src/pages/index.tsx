@@ -8,6 +8,7 @@ import { DarkModeSwitch } from '../components/DarkModeSwitch';
 import { Footer } from '../components/Footer';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import { IEmoji } from '../interfaces/IEmoji';
+import { VisitorCount } from '../components/VisitorCount';
 
 const Index = ({
   emojis,
@@ -84,6 +85,7 @@ const Index = ({
     </Head>
     <Container>
       <Hero />
+      <VisitorCount slug="/" />
       <DarkModeSwitch />
       <Main emojis={emojis} />
       <Footer>
