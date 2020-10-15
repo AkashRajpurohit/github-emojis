@@ -29,10 +29,11 @@ However as it loads the entire emoji list right of the bat, it takes up too much
 
 ## Features ✨
 
-* Lazy Loading Emojis from [Github Emoji API](https://developer.github.com/v3/emojis/) using [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
-* Search Feature with debounce
-* Dark / Light theme switcher
-* Minimalistic and smooth UI
+* Lazy Loading Emojis from [Github Emoji API](https://developer.github.com/v3/emojis/) using [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) :grimacing:
+* Search Feature with debounce :incoming_envelope:
+* Dark / Light theme switcher :yin_yang:
+* Minimalistic and smooth UI :atom_symbol:
+* PWA Enabled :zap:
 
 ## Support 💵
 > If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
