@@ -19,8 +19,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     q.Exists(q.Match(q.Index('hits_by_slug'), slug))
   );
 
-  console.log('Doc exists: ', docExists);
-
   if (!docExists) {
     await client.query(
       q.Create(q.Collection('hits'), {
@@ -33,8 +31,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     q.Get(q.Match(q.Index('hits_by_slug'), slug))
   );
 
-  console.log('Document: ', document);
-
   await client.query(
     q.Update(document.ref, {
       data: {
@@ -42,8 +38,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       }
     })
   );
-
-  console.log('Came here also');
 
   return res.status(200).json({
     hits: document.data.hits
