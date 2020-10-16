@@ -25,6 +25,7 @@ However as it loads the entire emoji list right of the bat, it takes up too much
 * [Next.js](https://nextjs.org/)
 * [Chakra UI](https://chakra-ui.com/)
 * [Typescript](https://www.typescriptlang.org/)
+* [FaunaDB](https://fauna.com/)
 * [Vercel For Deployment](https://vercel.com)
 
 ## Features ✨
