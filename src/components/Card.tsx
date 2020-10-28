@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Text, Button, Flex } from '@chakra-ui/core';
+import Image from 'next/image';
 
 export const Card = ({ code, img }: { code: string; img: string }) => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -24,12 +25,12 @@ export const Card = ({ code, img }: { code: string; img: string }) => {
       mx="20px"
       my="10px"
     >
-      <img
+      <Image
         src={img}
         width="40px"
         height="40px"
         alt={`${code} github emoji`}
-      ></img>
+      />
       <Text>{code}</Text>
       <Button mt="2" p="5px" variant="primary" onClick={() => copyCode(code)}>
         {hasCopied ? 'Copied!' : 'Copy'}

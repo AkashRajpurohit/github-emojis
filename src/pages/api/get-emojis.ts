@@ -16,7 +16,7 @@ const getData = async (): Promise<Record<string, string>> => {
   cachedAt = Date.now();
 
   return cache;
-}
+};
 
 export default async (_: NextApiRequest, res: NextApiResponse) => {
   const data = await getData();
