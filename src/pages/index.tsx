@@ -10,6 +10,8 @@ import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import { IEmoji } from '../interfaces/IEmoji';
 import { VisitorCount } from '../components/VisitorCount';
 
+import emojis from '../data/emojis.json';
+
 const Index = ({
   emojis,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => (
@@ -105,13 +107,7 @@ const Index = ({
 );
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const url =
-    process.env.NODE_ENV === 'production'
-      ? 'https://github-emojis.vercel.app'
-      : 'http://localhost:3000';
-
-  const res = await fetch(`${url}/api/get-emojis`);
-  const data = await res.json();
+  const data: Record<string, string> = emojis;
 
   const emojiObjToArray: IEmoji[] = Object.keys(data).map((code: string) => {
     return {
