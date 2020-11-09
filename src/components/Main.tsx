@@ -93,7 +93,7 @@ export const Main = ({ emojis }: IEmojiCardProps) => {
   }, 400);
 
   return (
-    <Stack pt="8" w="70%">
+    <Stack pt="8" w={['90%', '70%']}>
       <Box mb="4">
         <FormControl>
           <FormLabel>Search Shortcodes</FormLabel>

@@ -8,7 +8,9 @@ export const Hero = ({ title }: { title: string }) => (
     flexDirection="column"
   >
     <Heading fontSize="6vw">{title}</Heading>
-    <Text>Search shortcodes of emojis supported by Github</Text>
+    <Text fontSize={['0.9em', '1.3em']}>
+      Search shortcodes of emojis supported by Github
+    </Text>
   </Flex>
 );
 
