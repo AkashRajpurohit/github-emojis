@@ -1,6 +1,7 @@
 import { Text, Link } from '@chakra-ui/core';
 import Head from 'next/head';
 
+import { GithubCorner } from '../components/GithubCorner';
 import { Hero } from '../components/Hero';
 import { Container } from '../components/Container';
 import { Main } from '../components/Main';
@@ -89,6 +90,7 @@ const Index = ({
       <Hero />
       <VisitorCount slug="/" />
       <DarkModeSwitch />
+      <GithubCorner />
       <Main emojis={emojis} />
       <Footer>
         <Text>
