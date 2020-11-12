@@ -43,7 +43,7 @@ However as it loads the entire emoji list right of the bat, it takes up too much
 
 ## Bugs or Requests 🐛
 
-If you encounter any problems feel free to open an [issue](https://github.com/AkashRajpurohit/github-emojis/issues/new?template=bug_report.md). If you feel the library is missing a feature, please raise a [ticket](https://github.com/AkashRajpurohit/github-emojis/issues/new?template=feature_request.md) on GitHub and I'll look into it. Pull request are also welcome.
+If you encounter any problems feel free to open an [issue](https://github.com/AkashRajpurohit/github-emojis/issues/new?template=bug_report.md). If you feel the project is missing a feature, please raise a [ticket](https://github.com/AkashRajpurohit/github-emojis/issues/new?template=feature_request.md) on GitHub and I'll look into it. Pull request are also welcome.
 
 ## Where to find me? 👦🏽
 * [Website](https://akashrajpurohit.cf/)
