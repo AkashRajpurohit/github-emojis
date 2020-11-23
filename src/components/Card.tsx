@@ -28,9 +28,9 @@ export const Card = ({ code, img, description }: IEmoji) => {
 
   return (
     <Flex
-      minW="12rem"
-      minH="12rem"
-      maxW="15rem"
+      minW={['8rem', '10rem']}
+      minH={['8rem', '10rem']}
+      maxW="12rem"
       borderWidth="2px"
       borderRadius="lg"
       flexDirection="column"
@@ -43,7 +43,13 @@ export const Card = ({ code, img, description }: IEmoji) => {
       _hover={{ backgroundColor: `${hoverCardColor[colorMode]}` }}
       transition="all 200ms ease-in"
     >
-      <Flex px="10px" py="25px" justifyContent="center" w="100%">
+      <Flex
+        px="10px"
+        py="25px"
+        justifyContent="center"
+        w="100%"
+        wordBreak="break-all"
+      >
         <img
           src={img}
           width="60px"
