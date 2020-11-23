@@ -12,7 +12,7 @@
 	{
 		"code": ":bug:",
 		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f41b.png?v8",
-		"description": "Fix a bug"
+		"description": "when fixing a bug"
 	},
 	{
 		"code": ":tada:",
@@ -58,5 +58,65 @@
 		"code": ":construction:",
 		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png?v8",
 		"description": "Work in progress"
+	},
+	{
+		"code": ":truck:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f69a.png?v8",
+		"description": "Move or rename resources"
+	},
+	{
+		"code": ":card_file_box:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f5c3.png?v8",
+		"description": "Perform database related changes"
+	},
+	{
+		"code": ":iphone:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f4f1.png?v8",
+		"description": "Work on responsive design"
+	},
+	{
+		"code": ":passport_control:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f6c2.png?v8",
+		"description": "Work on code related to authorization, permissions and roles"
+	},
+	{
+		"code": ":arrow_up:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/2b06.png?v8",
+		"description": "When upgrading dependencies"
+	},
+	{
+		"code": ":arrow_down:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/2b07.png?v8",
+		"description": "When downgrading dependencies"
+	},
+	{
+		"code": ":adhesive_bandage:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1fa79.png?v8",
+		"description": "Simple fix on non critical issues"
+	},
+	{
+		"code": ":busts_in_silhouette:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f465.png?v8",
+		"description": "Add or update contributors"
+	},
+	{
+		"code": ":wrench:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f527.png?v8",
+		"description": "When updating configs"
+	},
+	{
+		"code": ":wheelchair:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/267f.png?v8",
+		"description": "When improving accessibility"
+	},
+	{
+		"code": ":boom:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f4a5.png?v8",
+		"description": "When fixing a crash"
+	},
+	{
+		"code": ":green_heart:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f49a.png?v8",
+		"description": "When fixing the CI build"
 	}
 ]
