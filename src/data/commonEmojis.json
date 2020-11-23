@@ -75,11 +75,6 @@
 		"description": "Work on responsive design"
 	},
 	{
-		"code": ":passport_control:",
-		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f6c2.png?v8",
-		"description": "Work on code related to authorization, permissions and roles"
-	},
-	{
 		"code": ":arrow_up:",
 		"img": "https://github.githubassets.com/images/icons/emoji/unicode/2b06.png?v8",
 		"description": "When upgrading dependencies"

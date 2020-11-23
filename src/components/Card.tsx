@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, Button, Flex } from '@chakra-ui/react';
+import { Text, Button, Flex, Box, useColorMode } from '@chakra-ui/react';
 import { IEmoji } from '../interfaces/IEmoji';
 
 export const Card = ({ code, img, description }: IEmoji) => {
@@ -16,21 +16,44 @@ export const Card = ({ code, img, description }: IEmoji) => {
     }
   };
 
+  const { colorMode } = useColorMode();
+
+  const cardColor = { light: 'blue.50', dark: '#2b2b2b' };
+  const hoverCardColor = { light: 'blue.100', dark: '#202020' };
+
   return (
     <Flex
-      pt="8"
-      justifyContent="center"
-      alignItems="center"
+      minW="12rem"
+      minH="12rem"
+      maxW="15rem"
+      borderWidth="2px"
+      borderRadius="lg"
       flexDirection="column"
-      mx="20px"
-      my="10px"
+      m="0 20px 20px 0"
+      boxShadow="0 1px 2px 0 rgba(0, 0, 0, .4)"
+      bg={cardColor[colorMode]}
+      textAlign="center"
+      onClick={() => copyCode(code)}
+      cursor="pointer"
+      _hover={{ backgroundColor: `${hoverCardColor[colorMode]}` }}
+      transition="all 200ms ease-in"
     >
-      {description && <Text>{description}</Text>}
-      <img src={img} width="40px" height="40px" alt={`${code} github emoji`} />
-      <Text>{code}</Text>
-      <Button mt="2" p="5px" variant="primary" onClick={() => copyCode(code)}>
-        {hasCopied ? 'Copied!' : 'Copy'}
-      </Button>
+      <Flex px="10px" py="25px" justifyContent="center" w="100%">
+        <img
+          src={img}
+          width="60px"
+          height="60px"
+          alt={`${code} github emoji`}
+        />
+      </Flex>
+      <Box px="10px" py="15px" wordBreak="break-word">
+        <Text>{code}</Text>
+        {description && (
+          <Box mt={4}>
+            <Text fontWeight="bold">{description}</Text>
+          </Box>
+        )}
+      </Box>
     </Flex>
   );
 };

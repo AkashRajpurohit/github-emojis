@@ -33,6 +33,7 @@ const CommonEmojis = ({ emojis }: CommonEmojisProps) => {
               w="100%"
               justifyContent="center"
               alignItems="center"
+              mt={8}
             >
               {(emojis ?? []).map((emoji) => (
                 <Card
