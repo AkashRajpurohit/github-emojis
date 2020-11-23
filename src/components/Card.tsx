@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Text, Button, Flex } from '@chakra-ui/react';
+import { IEmoji } from '../interfaces/IEmoji';
 
-export const Card = ({ code, img }: { code: string; img: string }) => {
+export const Card = ({ code, img, description }: IEmoji) => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const copyCode = async (code: string) => {
@@ -24,6 +25,7 @@ export const Card = ({ code, img }: { code: string; img: string }) => {
       mx="20px"
       my="10px"
     >
+      {description && <Text>{description}</Text>}
       <img src={img} width="40px" height="40px" alt={`${code} github emoji`} />
       <Text>{code}</Text>
       <Button mt="2" p="5px" variant="primary" onClick={() => copyCode(code)}>

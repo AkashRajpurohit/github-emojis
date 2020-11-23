@@ -1,0 +1,62 @@
+[
+	{
+		"code": ":art:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f3a8.png?v8",
+		"description": "Improve structure of code"
+	},
+	{
+		"code": ":zap:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8",
+		"description": "Improve performance"
+	},
+	{
+		"code": ":bug:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f41b.png?v8",
+		"description": "Fix a bug"
+	},
+	{
+		"code": ":tada:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f389.png?v8",
+		"description": "Begin the project"
+	},
+	{
+		"code": ":sparkles:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8",
+		"description": "Added new features"
+	},
+	{
+		"code": ":book:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png?v8",
+		"description": "Adding documentation"
+	},
+	{
+		"code": ":twisted_rightwards_arrows:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f500.png?v8",
+		"description": "Refactoring code"
+	},
+	{
+		"code": ":package:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f4e6.png?v8",
+		"description": "Created a new release"
+	},
+	{
+		"code": ":white_check_mark:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/2705.png?v8",
+		"description": "Adding tests"
+	},
+	{
+		"code": ":recycle:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/267b.png?v8",
+		"description": "Dead code removal"
+	},
+	{
+		"code": ":lipstick:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f484.png?v8",
+		"description": "Improvement in UI"
+	},
+	{
+		"code": ":construction:",
+		"img": "https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png?v8",
+		"description": "Work in progress"
+	}
+]

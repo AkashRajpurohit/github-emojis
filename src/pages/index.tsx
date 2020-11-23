@@ -12,9 +12,13 @@ import { IEmoji } from '../interfaces/IEmoji';
 import { VisitorCount } from '../components/VisitorCount';
 
 import emojis from '../data/emojis.json';
+import commonEmojis from '../data/commonEmojis.json';
+
+import CommonEmojis from '../components/CommonEmojis';
 
 const Index = ({
   emojis,
+  commonEmojis,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => (
   <>
     <Head>
@@ -91,12 +95,13 @@ const Index = ({
       <VisitorCount slug="/" />
       <DarkModeSwitch />
       <GithubCorner />
+      <CommonEmojis emojis={commonEmojis} />
       <Main emojis={emojis} />
       <Footer>
         <Text>
           Made with ❤️ by{' '}
           <Link
-            href="https://akashrajpurohit.cf"
+            href="https://akashrajpurohit.netlify.app"
             rel="noopener noreferrer nofollow"
             target="_blank"
           >
@@ -109,18 +114,22 @@ const Index = ({
 );
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const data: Record<string, string> = emojis;
+  const emojisData: Record<string, string> = emojis;
+  const commonEmojisData: IEmoji[] = commonEmojis;
 
-  const emojiObjToArray: IEmoji[] = Object.keys(data).map((code: string) => {
-    return {
-      code: `:${code}:`,
-      img: data[code] as string,
-    };
-  });
+  const emojiObjToArray: IEmoji[] = Object.keys(emojisData).map(
+    (code: string) => {
+      return {
+        code: `:${code}:`,
+        img: emojisData[code] as string,
+      };
+    }
+  );
 
   return {
     props: {
       emojis: emojiObjToArray,
+      commonEmojis: commonEmojisData,
     },
   };
 };
