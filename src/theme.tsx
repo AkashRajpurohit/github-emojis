@@ -2,7 +2,7 @@ import {
   ColorModeOptions,
   extendTheme,
   theme as chakraTheme,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 
 const fonts = { ...chakraTheme.fonts, mono: `'Menlo', monospace` };
 

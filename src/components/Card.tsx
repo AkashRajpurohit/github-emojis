@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, Button, Flex } from '@chakra-ui/core';
+import { Text, Button, Flex } from '@chakra-ui/react';
 
 export const Card = ({ code, img }: { code: string; img: string }) => {
   const [hasCopied, setHasCopied] = useState(false);

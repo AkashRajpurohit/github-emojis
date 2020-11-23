@@ -1,4 +1,4 @@
-import { Text, Link } from '@chakra-ui/core';
+import { Text, Link } from '@chakra-ui/react';
 import Head from 'next/head';
 
 import { GithubCorner } from '../components/GithubCorner';

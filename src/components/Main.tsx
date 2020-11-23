@@ -10,7 +10,7 @@ import {
   Text,
   FormLabel,
   FormControl,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import { debounce } from '../lib/debounce';
 
 interface IEmojiCardProps {

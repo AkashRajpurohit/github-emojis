@@ -1,6 +1,6 @@
 import React from 'react';
 import Github from 'react-github-corner';
-import { useColorMode } from '@chakra-ui/core';
+import { useColorMode } from '@chakra-ui/react';
 
 export const GithubCorner = () => {
   const { colorMode } = useColorMode();

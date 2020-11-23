@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Text } from '@chakra-ui/core';
+import { Text } from '@chakra-ui/react';
 import format from 'comma-number';
 
 export const VisitorCount = ({ slug }: { slug: string }) => {
