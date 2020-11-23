@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
-import { Text, Button, Flex, Box, useColorMode } from '@chakra-ui/react';
+import React from 'react';
+import { Text, Flex, Box, useColorMode, useToast } from '@chakra-ui/react';
 import { IEmoji } from '../interfaces/IEmoji';
 
 export const Card = ({ code, img, description }: IEmoji) => {
-  const [hasCopied, setHasCopied] = useState(false);
+  const toast = useToast();
 
   const copyCode = async (code: string) => {
     if (navigator && navigator.clipboard) {
       await navigator.clipboard.writeText(code);
+      toast.closeAll();
 
-      setHasCopied(true);
-      setTimeout(() => {
-        setHasCopied(false);
-      }, 2000);
+      toast({
+        title: 'Hurray! 🙋‍♂️',
+        description: `We've copied the code ( ${code} ) for you.`,
+        status: 'success',
+        duration: 7000,
+        position: 'top-right',
+        isClosable: true,
+      });
     }
   };
 
