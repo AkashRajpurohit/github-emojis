@@ -105,7 +105,7 @@ const Index = ({
         <Text>
           Made with ❤️ by{' '}
           <Link
-            href="https://akashrajpurohit.netlify.app"
+            href="https://akashrajpurohit.com/"
             rel="noopener noreferrer nofollow"
             target="_blank"
           >
