@@ -89,6 +89,10 @@ const Index = ({
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
+      <meta
+        name="google-site-verification"
+        content="iEqlK8IMwcehLYGwiM5MpzjoeqRnWytNQk87XIaN72U"
+      />
     </Head>
     <Container>
       <Hero />
