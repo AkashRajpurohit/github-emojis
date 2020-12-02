@@ -7,7 +7,7 @@ import { Container } from '../components/Container';
 import { Main } from '../components/Main';
 import { DarkModeSwitch } from '../components/DarkModeSwitch';
 import { Footer } from '../components/Footer';
-import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { IEmoji } from '../interfaces/IEmoji';
 import { VisitorCount } from '../components/VisitorCount';
 
@@ -19,7 +19,7 @@ import CommonEmojis from '../components/CommonEmojis';
 const Index = ({
   emojis,
   commonEmojis,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) => (
+}: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
     <Head>
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -117,7 +117,7 @@ const Index = ({
   </>
 );
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const emojisData: Record<string, string> = emojis;
   const commonEmojisData: IEmoji[] = commonEmojis;
 
