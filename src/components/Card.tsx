@@ -14,7 +14,7 @@ export const Card = ({ code, img, description }: IEmoji) => {
         title: 'Hurray! 🙋‍♂️',
         description: `We've copied the code ( ${code} ) for you.`,
         status: 'success',
-        duration: 7000,
+        duration: 4000,
         position: 'top-right',
         isClosable: true,
       });
