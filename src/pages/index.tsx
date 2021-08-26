@@ -1,20 +1,17 @@
-import { Text, Link } from '@chakra-ui/react';
+import { Link, Text } from '@chakra-ui/react';
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
-
-import { GithubCorner } from '../components/GithubCorner';
-import { Hero } from '../components/Hero';
+import CommonEmojis from '../components/CommonEmojis';
 import { Container } from '../components/Container';
-import { Main } from '../components/Main';
 import { DarkModeSwitch } from '../components/DarkModeSwitch';
 import { Footer } from '../components/Footer';
-import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import { IEmoji } from '../interfaces/IEmoji';
+import { GithubCorner } from '../components/GithubCorner';
+import { Hero } from '../components/Hero';
+import { Main } from '../components/Main';
 import { VisitorCount } from '../components/VisitorCount';
-
-import emojis from '../data/emojis.json';
 import commonEmojis from '../data/commonEmojis.json';
-
-import CommonEmojis from '../components/CommonEmojis';
+import { IEmoji } from '../interfaces/IEmoji';
+import { getEmojis } from '../lib/emojis';
 
 const Index = ({
   emojis,
@@ -118,7 +115,7 @@ const Index = ({
 );
 
 export const getStaticProps: GetStaticProps = async () => {
-  const emojisData: Record<string, string> = emojis;
+  const emojisData: Record<string, string> = await getEmojis();
   const commonEmojisData: IEmoji[] = commonEmojis;
 
   const emojiObjToArray: IEmoji[] = Object.keys(emojisData).map(
@@ -135,6 +132,7 @@ export const getStaticProps: GetStaticProps = async () => {
       emojis: emojiObjToArray,
       commonEmojis: commonEmojisData,
     },
+    revalidate: 60 * 15, // 15 minutes
   };
 };
 
