@@ -34,6 +34,7 @@ However as it loads the entire emoji list right of the bat, it takes up too much
 
 * Lazy Loading Emojis from [Github Emoji API](https://developer.github.com/v3/emojis/) using [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) :grimacing:
 * Search Feature with debounce :incoming_envelope:
+* Current architecture makes use of [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration) to serve data as soon as possible and revalidate the stale data to avoid getting Rate Limited by Github :rocket:
 * Dark / Light theme switcher :yin_yang:
 * Minimalistic and smooth UI :atom_symbol:
 * PWA Enabled :zap:
