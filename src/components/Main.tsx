@@ -1,17 +1,18 @@
-import React, { useReducer, useCallback } from 'react';
-import { IEmoji } from '../interfaces/IEmoji';
-import { Card } from './Card';
-import { Intersection } from './Intersection';
 import {
   Box,
-  Input,
-  Stack,
   Flex,
-  Text,
-  FormLabel,
   FormControl,
+  FormLabel,
+  Input,
+  Spinner,
+  Stack,
+  Text,
 } from '@chakra-ui/react';
+import React, { useCallback, useReducer, useTransition } from 'react';
+import { IEmoji } from '../interfaces/IEmoji';
 import { debounce } from '../lib/debounce';
+import { Card } from './Card';
+import { Intersection } from './Intersection';
 
 interface IEmojiCardProps {
   emojis: IEmoji[];
@@ -75,6 +76,7 @@ const emojiReducer = (state: State, action: Action): State => {
 };
 
 export const Main = ({ emojis }: IEmojiCardProps) => {
+  const [isPending, startTransition] = useTransition();
   const initialState = {
     totalEmojis: emojis,
     filteredEmojis: emojis,
@@ -89,13 +91,16 @@ export const Main = ({ emojis }: IEmojiCardProps) => {
   }, []);
 
   const filterOnSearch = debounce((value: string) => {
-    dispatch({ type: 'SEARCH', payload: value });
+    startTransition(() => dispatch({ type: 'SEARCH', payload: value }));
   }, 400);
 
   return (
     <Stack pt="8" w={['90%', '70%']}>
-      <Box mb="4">
-        <FormControl>
+      <Flex w="100%" justifyContent="center" h="4">
+        {isPending && <Spinner />}
+      </Flex>
+      <Box my="4">
+        <FormControl mb="4">
           <FormLabel>Search Shortcodes</FormLabel>
           <Input
             placeholder="eg: atom"
@@ -112,7 +117,7 @@ export const Main = ({ emojis }: IEmojiCardProps) => {
         alignItems="center"
       >
         {state.emojis.map((e) => (
-          <Card code={e.code} img={e.img} key={e.code} />
+          <Card code={e.code} img={e.img} key={e.code} disabled={isPending} />
         ))}
         {state.emojis.length === 0 && (
           <Text my="8">No Emoji Found for this search</Text>

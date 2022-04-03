@@ -1,8 +1,12 @@
+import { Box, Flex, Text, useColorMode, useToast } from '@chakra-ui/react';
 import React from 'react';
-import { Text, Flex, Box, useColorMode, useToast } from '@chakra-ui/react';
 import { IEmoji } from '../interfaces/IEmoji';
 
-export const Card = ({ code, img, description }: IEmoji) => {
+interface ICardProps extends IEmoji {
+  disabled?: boolean;
+}
+
+export const Card = ({ code, img, description, disabled }: ICardProps) => {
   const toast = useToast();
 
   const copyCode = async (code: string) => {
@@ -25,6 +29,7 @@ export const Card = ({ code, img, description }: IEmoji) => {
 
   const cardColor = { light: 'blue.50', dark: '#2b2b2b' };
   const hoverCardColor = { light: 'blue.100', dark: '#202020' };
+  const cardColorDisabled = { light: 'blue.100', dark: '#212121' };
 
   return (
     <Flex
@@ -42,6 +47,12 @@ export const Card = ({ code, img, description }: IEmoji) => {
       cursor="pointer"
       _hover={{ backgroundColor: `${hoverCardColor[colorMode]}` }}
       transition="all 200ms ease-in"
+      aria-disabled={disabled}
+      _disabled={{
+        backgroundColor: `${cardColorDisabled[colorMode]}`,
+        pointerEvents: 'none',
+        cursor: 'not-allowed',
+      }}
     >
       <Flex
         px="10px"

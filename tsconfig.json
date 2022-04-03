@@ -16,7 +16,8 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "types": ["react/next", "react-dom/next"]
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx", "./typings/**.d.ts"]
