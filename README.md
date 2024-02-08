@@ -12,7 +12,9 @@
   <a href="https://github.com/AkashRajpurohit/github-emojis/issues?q=is%3Aopen+is%3Aissue"><img src="https://img.shields.io/github/issues/AkashRajpurohit/github-emojis" height="20"></a>
   <a href="https://github.com/AkashRajpurohit/github-emojis/blob/master/LICENSE"><img src="https://img.shields.io/github/license/AkashRajpurohit/github-emojis" height="20"></a>
   <a href="https://github-emojis.vercel.app/"><img src="https://img.shields.io/website-up-down-green-red/http/github-emojis.vercel.app.svg" height="20" /></a>
-  <a href="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FAkashRajpurohit%2Fgithub-emojis"><img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FAkashRajpurohit%2Fgithub-emojis" height="20"></a>
+  <a href="https://twitter.com/akashwhocodes">
+    <img alt="follow on twitter" src="https://img.shields.io/twitter/follow/akashwhocodes.svg?style=social&label=@akashwhocodes">
+  </a>
 </p>
 
 ---
@@ -39,17 +41,14 @@ However as it loads the entire emoji list right of the bat, it takes up too much
 * Minimalistic and smooth UI :atom_symbol:
 * PWA Enabled :zap:
 
-## Support 💵
-> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/RajpurohitAkash)
-
 ## Bugs or Requests 🐛
 
 If you encounter any problems feel free to open an [issue](https://github.com/AkashRajpurohit/github-emojis/issues/new?template=bug_report.md). If you feel the project is missing a feature, please raise a [ticket](https://github.com/AkashRajpurohit/github-emojis/issues/new?template=feature_request.md) on GitHub and I'll look into it. Pull request are also welcome.
 
-## Where to find me? 👦🏽
-* [Website](https://akashrajpurohit.cf/)
-* [Linkedin](https://www.linkedin.com/in/AkashRajpurohit)
-* [Instagram](https://www.instagram.com/akashwho.codes)
-* [Twitter](https://www.twitter.com/AkashWhoCodes)
+## Where to find me? 👀
+
+[![Website Badge](https://img.shields.io/badge/-akashrajpurohit.com-3b5998?logo=google-chrome&logoColor=white)](https://akashrajpurohit.com/)
+[![Twitter Badge](https://img.shields.io/badge/-@akashwhocodes-00acee?logo=Twitter&logoColor=white)](https://twitter.com/AkashWhoCodes)
+[![Linkedin Badge](https://img.shields.io/badge/-@AkashRajpurohit-0e76a8?logo=Linkedin&logoColor=white)](https://linkedin.com/in/AkashRajpurohit)
+[![Instagram Badge](https://img.shields.io/badge/-@akashwho.codes-e4405f?logo=Instagram&logoColor=white)](https://instagram.com/akashwho.codes/)
+[![Telegram Badge](https://img.shields.io/badge/-@AkashRajpurohit-0088cc?logo=Telegram&logoColor=white)](https://t.me/AkashRajpurohit)
