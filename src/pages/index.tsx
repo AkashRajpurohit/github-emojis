@@ -132,7 +132,7 @@ export const getStaticProps: GetStaticProps = async () => {
       emojis: emojiObjToArray,
       commonEmojis: commonEmojisData,
     },
-    revalidate: 60 * 15, // 15 minutes
+    revalidate: 60 * 60 * 24, // 1 day
   };
 };
 
