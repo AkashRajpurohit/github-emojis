@@ -93,7 +93,6 @@ const Index = ({
     </Head>
     <Container>
       <Hero />
-      <VisitorCount slug="/" />
       <DarkModeSwitch />
       <GithubCorner />
       <CommonEmojis emojis={commonEmojis} />
