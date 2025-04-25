@@ -8,7 +8,6 @@ import { Footer } from '../components/Footer';
 import { GithubCorner } from '../components/GithubCorner';
 import { Hero } from '../components/Hero';
 import { Main } from '../components/Main';
-import { VisitorCount } from '../components/VisitorCount';
 import commonEmojis from '../data/commonEmojis.json';
 import { IEmoji } from '../interfaces/IEmoji';
 import { getEmojis } from '../lib/emojis';
