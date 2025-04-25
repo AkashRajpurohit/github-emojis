@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/AkashRajpurohit/github-emojis"><img src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github" height="20" /></a>
-  <a href="https://github.com/AkashRajpurohit/github-emojis"><img src="https://visitor-badge.laobi.icu/badge?page_id=akashrajpurohit-github-emojis.visitor-badge" height="20"></a>
+  <img alt="Visitors" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fvc.akashrajpurohit.com%2Fc%2Fakash~gh~github-emojis&query=count&style=flat&logo=github&label=Visitors&color=066da5">
   <a href="https://github.com/AkashRajpurohit/github-emojis/stargazers"><img src="https://img.shields.io/github/stars/AkashRajpurohit/github-emojis" height="20"></a>
   <a href="https://github.com/AkashRajpurohit/github-emojis/network/members"><img src="https://img.shields.io/github/forks/AkashRajpurohit/github-emojis" height="20"></a>
   <a href="https://github.com/AkashRajpurohit/github-emojis/issues?q=is%3Aopen+is%3Aissue"><img src="https://img.shields.io/github/issues/AkashRajpurohit/github-emojis" height="20"></a>
